@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <head>
+    <title>MANAS S. | Projects</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/scss/projects.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <span class="f-name">Manas </span>
+        <span class="l-name">Sinha</span>
+      </a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+    
+      <main>
+          <div class="card-container">
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Maze Solver</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Laboriosam rem iure adipisci quo, odio provident,
+                              exercitationem quia id praesentium, corrupti dicta? Laudantium magni aliquam ea 
+                              repudiandae explicabo laboriosam? Dignissimos, sapiente!</p>
+                        <a href="articles/maze-solver.html">See What Lies Beyound</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Handwriting Recognition</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Laboriosam rem iure adipisci quo, odio provident, 
+                             exercitationem quia id praesentium, corrupti dicta? Laudantium magni aliquam ea 
+                             repudiandae explicabo laboriosam? Dignissimos, sapiente!</p>
+                        <a href="articles/handwiting-recognition.html">See What Lies Beyound</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Gesture Controlled Mouse Pointer</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Laboriosam rem iure adipisci quo, odio provident, 
+                             exercitationem quia id praesentium, corrupti dicta? Laudantium magni aliquam ea 
+                             repudiandae explicabo laboriosam? Dignissimos, sapiente!</p>
+                        <a href="#">See What Lies Beyound</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>04</h2>
+                        <h3>Augmented Reality Using OpenCV</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Laboriosam rem iure adipisci quo, odio provident, 
+                             exercitationem quia id praesentium, corrupti dicta? Laudantium magni aliquam ea 
+                             repudiandae explicabo laboriosam? Dignissimos, sapiente!</p>
+                        <a href="#">See What Lies Beyound</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+         
+      </main>
+    
+    <footer>
+      <div class="logo-footer">
+        <a href="#" class="logo">
+          <span class="f-name">Manas </span>
+          <span class="l-name">Sinha</span>
+        </a>
+      </div>
+      <img class="divider" src="public/images/divider.png">
+      <div class="contact">
+        <ul>
+          <li><span class="fa fa-mobile" aria-hidden="true"></span><span>+91 950 421 3681</span></li>
+          <li><span class="fa fa-envelope-o" aria-hidden="true"></span><span>ten3097@gmail.com</span></li>
+          <li><span class="fa fa-github-alt" aria-hidden="true"></span><span>GhostlyPresence</span></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <h6>© Copyright Manas sinha - 2021</h6>
+      </div>
+    </footer>
+    <script>
+      let headingTextSection = document.getElementsByClassName('heading')[0];
+      let navBar = document.getElementsByTagName('nav')[0];
+      
+      window.addEventListener('scroll',()=>{
+        let val = window.scrollY;
+        headingTextSection.style.top = val*0.7 + 'px';
+        navBar.style.top = val*0.8 + 'px';
+      })
+     </script>
+  </body>
+</html>
