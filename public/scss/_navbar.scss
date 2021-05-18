@@ -58,3 +58,25 @@ nav ul li a:hover
     color: var(--black);
 }
 
+@media (max-width:900px)
+{
+    nav
+    {
+        height:9em;
+        font-size: 0.9em;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+@media (max-width:600px)
+{
+    nav
+    {
+        height:8em;
+        font-size: 0.9em;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}

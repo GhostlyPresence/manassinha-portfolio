@@ -48,8 +48,31 @@ footer .logo-footer
 
 @media (max-width: 900px)
 {
+
     .contact ul
     {
         flex-direction: column; 
+        
+    }
+    .contact ul li
+    {
+        display: flex;
+    }
+}
+@media (max-width: 600px)
+{
+    footer .logo-footer
+    {
+        font-size: 4.5vw;
+    }
+
+    .contact ul li
+    {
+        font-size: 3.5vw;
+    }
+    .copyright
+    {
+        width: 80vw;
+        text-align: center;
     }
 }

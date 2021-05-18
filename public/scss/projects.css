@@ -88,6 +88,34 @@ nav ul li a:hover {
   color: var(--black);
 }
 
+@media (max-width: 900px) {
+  nav {
+    height: 9em;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: 8em;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 body {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--black)), to(var(--background)));
@@ -106,9 +134,15 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background: var(--background);
-  padding-top: 10vh;
+  padding-top: 5em;
   min-height: 100vh;
   width: 100vw;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-top: 7em;
+  }
 }
 
 .card-container {
@@ -310,6 +344,24 @@ footer .logo-footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .logo-footer {
+    font-size: 4.5vw;
+  }
+  .contact ul li {
+    font-size: 3.5vw;
+  }
+  .copyright {
+    width: 80vw;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=projects.css.map */
