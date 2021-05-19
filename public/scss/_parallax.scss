@@ -49,29 +49,49 @@ section img
     font-weight: 400;
     line-height:1.22em; 
 }
+.btn-container
+{
+    margin-top: 40px;
+}
 .btn
 {   
     display: inline-block;
     padding: 15px 30px;
     border: 1px solid #fff;
-    background-color: #fff;
-    color: #151515;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 40px;
     text-decoration: none;
+    margin-right:10px;
     transition: 250ms;
     cursor: pointer
 }
-.btn:hover
+.project-btn
+{
+    background-color: #fff;
+    color: #151515;
+}
+.gihub-btn
 {
     color: #fff;
+}
+.project-btn:hover
+{
+    transform: scale(1.05);
+    color: aqua;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid aqua;
+}
+.gihub-btn:hover
+{
+    transform: scale(1.05);
+    color: aqua;
+    background-color: #151515;
+    border: 1px solid #151515;
+    text-shadow: 0px 0px 10px #fff;
 }
 .about
 {
