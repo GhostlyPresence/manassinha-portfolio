@@ -11,7 +11,7 @@ main{
     justify-content: center;
     align-items: center;
     //background: var(--background);
-    background-image: url("../images/night-sky.png");
+    background-image: url("../images/night-sky-min.png");
     background-size: 100vw 100vh;
     background-attachment: fixed;
     padding-top: 5em;
@@ -39,4 +39,5 @@ main::before
 }
 @import "card";
 
+@import "scroll";
 @import "footer";

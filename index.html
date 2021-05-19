@@ -20,6 +20,9 @@
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
+
+    
+
     <section>
       <div class="heading">
         <h1 id="text">Hello There, I'm Manas&nbsp;S.</h1>
@@ -60,15 +63,10 @@
         <h6>© Copyright Manas sinha - 2021</h6>
       </div>
     </footer>
-    <script>
-      let headingTextSection = document.getElementsByClassName('heading')[0];
-      let navBar = document.getElementsByTagName('nav')[0];
-      
-      window.addEventListener('scroll',()=>{
-        let val = window.scrollY;
-        headingTextSection.style.top = val*0.7 + 'px';
-        navBar.style.top = val*0.8 + 'px';
-      })
-     </script>
+
+    <div class="scroll-top"></div>
+
+    <script src="public/js/app.js"></script>
+    <script src="public/js/parallax.js"></script>
   </body>
 </html>
