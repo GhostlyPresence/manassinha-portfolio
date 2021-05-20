@@ -9,7 +9,8 @@
   --github:#f9b208;
   --youtube:#ff005c;
   --linkedin:aqua;
-  --codepen: #c0e218
+  --codepen: #c0e218;
+  --contact:#fa4659
 ;
 }
 
@@ -88,9 +89,47 @@ nav ul li a {
   transition: 250ms;
 }
 
+nav ul li .fa {
+  background-color: var(--contact);
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px var(--contact), 0 0 25px var(--contact), 0 0 50px var(--contact), 0 0 200px var(--contact);
+          box-shadow: 0 0 5px var(--contact), 0 0 25px var(--contact), 0 0 50px var(--contact), 0 0 200px var(--contact);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-animation: contactAnimation 1.25s ease infinite;
+          animation: contactAnimation 1.25s ease infinite;
+}
+
+nav ul li .fa:hover {
+  background-color: var(--contact);
+  color: #fff;
+}
+
 nav ul li a:hover {
   background: #fff;
   color: var(--black);
+}
+
+@-webkit-keyframes contactAnimation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes contactAnimation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 900px) {

@@ -52,10 +52,36 @@ nav ul li a
     border-radius: 20px;
     transition: 250ms;
 }
+nav ul li .fa
+{
+    background-color: var(--contact);
+    color: #fff;
+    box-shadow: 0 0 5px var(--contact),
+                0 0 25px var(--contact),
+                0 0 50px var(--contact),
+                0 0 200px var(--contact);
+    transition: 500ms;
+    animation: contactAnimation 1.25s ease infinite;
+    
+    &:hover
+    {
+        background-color: var(--contact);
+        color:#fff;
+    }
+}
 nav ul li a:hover
 {
     background: #fff;
     color: var(--black);
+}
+
+@keyframes contactAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width:900px)
