@@ -155,20 +155,58 @@ section .container .social-links ul li
         text-decoration: none;
         transition: 250ms;
     }
-    & a .fa
+    & a span
     {
         transition: 250ms;
         font-size: 1.3em;
+        padding: 10px;
     }
-    & a:hover span
-    {
-        color: aqua;
-        transform: scale(1.3);
-    }
-   
 
 }
+section .container .social-links ul li:nth-child(1) a:hover span{
+    color: var(--codepen);
+    color: #151515;
+    background: var(--codepen);
+    box-shadow: 0 0 5px var(--codepen),
+                0 0 25px var(--codepen),
+                0 0 50px var(--codepen),
+                0 0 200px var(--codepen);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 
+}
+section .container .social-links ul li:nth-child(2) a:hover span{
+    color: var(--github);
+    color: #151515;
+    background: var(--github);
+    box-shadow: 0 0 5px var(--github),
+                0 0 25px var(--github),
+                0 0 50px var(--github),
+                0 0 200px var(--github);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+}
+section .container .social-links ul li:nth-child(3) a:hover span{
+    color: var(--linkedin);
+    color: #151515;
+    background: var(--linkedin);
+    box-shadow: 0 0 5px var(--linkedin),
+                0 0 25px var(--linkedin),
+                0 0 50px var(--linkedin),
+                0 0 200px var(--linkedin);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+}
+section .container .social-links ul li:nth-child(4) a:hover span{
+    color: var(--youtube);
+    color: #151515;
+    background: var(--youtube);
+    box-shadow: 0 0 5px var(--youtube),
+                0 0 25px var(--youtube),
+                0 0 50px var(--youtube),
+                0 0 200px var(--youtube);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
+}
 
 @media(max-width:900px)
 {
