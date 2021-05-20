@@ -49,10 +49,7 @@ section img
     font-weight: 400;
     line-height:1.22em; 
 }
-.btn-container
-{
-    margin-top: 40px;
-}
+
 .btn
 {   
     display: inline-block;
@@ -65,7 +62,7 @@ section img
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    margin-right:10px;
+    margin-top: 40px;
     transition: 250ms;
     cursor: pointer
 }
@@ -74,10 +71,7 @@ section img
     background-color: #fff;
     color: #151515;
 }
-.gihub-btn
-{
-    color: #fff;
-}
+
 .project-btn:hover
 {
     transform: scale(1.05);
@@ -85,14 +79,7 @@ section img
     background-color: transparent;
     border: 1px solid aqua;
 }
-.gihub-btn:hover
-{
-    transform: scale(1.05);
-    color: aqua;
-    background-color: #151515;
-    border: 1px solid #151515;
-    text-shadow: 0px 0px 10px #fff;
-}
+
 .about
 {
   position: relative;
@@ -118,6 +105,56 @@ section img
     text-align: center;
     font-size: 1em;
     color: #fff;
+}
+.link-container
+{
+   width: 100%;
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+.link-container a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    padding: 25px 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    font-weight: bold;
+    background: var(--background);
+}
+
+.link-container .github-btn
+{
+    color: var(--github);
+    border: 2px solid var(--github);
+    &:hover{
+        color: var(--background);
+        background: var(--github);
+        box-shadow: 0 0 5px var(--github),
+                    0 0 25px var(--github),
+                    0 0 50px var(--github),
+                    0 0 200px var(--github);
+         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    }
+}
+
+.link-container .youtube-btn
+{
+    color:var(--youtube);
+    border: 2px solid var(--youtube);
+    &:hover{
+        color:var(--background);
+        background: var(--youtube);
+        box-shadow: 0 0 5px var(--youtube),
+                    0 0 25px var(--youtube),
+                    0 0 50px var(--youtube),
+                    0 0 200px var(--youtube);
+         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    }
 }
 
 @media (max-width: 900px)
@@ -151,5 +188,14 @@ section img
     #sub-text
     {
         font-size: 17px;
+    }
+    .link-container
+    {
+        flex-direction: column;
+        width: 70%;
+    }
+    .link-container a
+    {
+        margin: 10px 0;
     }
 }
