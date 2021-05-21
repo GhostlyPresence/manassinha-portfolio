@@ -52,8 +52,9 @@ nav ul li a
     border-radius: 20px;
     transition: 250ms;
 }
-nav ul li .fa
+nav ul li:last-child
 {
+    border-radius: 20px;
     background-color: var(--contact);
     color: #fff;
     box-shadow: 0 0 5px var(--contact),
@@ -63,13 +64,9 @@ nav ul li .fa
     transition: 500ms;
     animation: contactAnimation 1.25s ease infinite;
     
-    &:hover
-    {
-        background-color: var(--contact);
-        color:#fff;
-    }
+    
 }
-nav ul li a:hover
+nav ul li:not(:last-child) a:hover
 {
     background: #fff;
     color: var(--black);

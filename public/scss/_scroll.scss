@@ -9,7 +9,9 @@
     background-size: cover;
     cursor: pointer; 
     padding: 15px; 
-    border-radius: 10px; 
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px var(--light-blue));
+    -webkit-filter: drop-shadow(0px 0px 10px var(--light-blue));
     transition: 0.5s;
 }
 .scroll-top:hover
