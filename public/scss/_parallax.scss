@@ -182,7 +182,8 @@ section img
     cursor: pointer;
     transition: 1s;
     transform-origin: left;
-    //animation: scaleAnimation 3s ease-in-out infinite;
+    animation: scaleAnimation 3s ease-in-out;
+    animation-delay: 5s;
     &:hover{
         background: #FB1ABB;
         background: linear-gradient(to bottom right, #FB1ABB, #5225BB);
@@ -243,12 +244,13 @@ section img
 
 @keyframes scaleAnimation
 {
-    from{
+    0%{
         transform: scaleX(0);
     }
-    to{
+    100%{
         transfrom: scaleX(1);
     }
+
 }
 @media (max-width: 900px)
 {
