@@ -83,7 +83,7 @@ section img
 .about
 {
   position: relative;
-  padding: 100px;
+  padding: 10%;
   background:var(--background);  
   display: flex;
   flex-direction: column;
@@ -100,6 +100,7 @@ section img
 {
     margin-top:30px;
 }
+
 
 .about p
 {
@@ -162,8 +163,13 @@ section img
     }
 }
 
-@media (max-width: 900px)
+@media (max-width:108px)
 {
+    .about
+    {
+        padding: 8%;
+    }
+
     #text
     {
         font-size: 70px;
@@ -172,20 +178,20 @@ section img
     }
     #sub-text
     {
-        font-size: 25px;
-        
+        font-size: 25px;     
     }
     
 }
-@media (max-width: 600px)
+@media (max-width: 750px)
 {
     section
     {
         padding: 90px;
     }
-    .about
+
+    #divider1
     {
-        padding: 60px;
+        width: 70%;
     }
     #text
     {

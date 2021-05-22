@@ -263,7 +263,7 @@ section img {
 
 .about {
   position: relative;
-  padding: 100px;
+  padding: 10%;
   background: var(--background);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,7 +345,10 @@ section img {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 108px) {
+  .about {
+    padding: 8%;
+  }
   #text {
     font-size: 70px;
     line-height: 0.9em;
@@ -356,12 +359,12 @@ section img {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   section {
     padding: 90px;
   }
-  .about {
-    padding: 60px;
+  #divider1 {
+    width: 70%;
   }
   #text {
     font-size: 60px;

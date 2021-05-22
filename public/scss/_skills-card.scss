@@ -2,7 +2,8 @@
 {
     width: 100%;
     min-height: 500px;
-    padding: 50px;
+    padding: 5%;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -95,11 +96,23 @@
     .about .card-container 
     {
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
+        padding: 20px 0;
     }
     .about .card-container .card
     {
         width: 100%;
     }
     
+}
+@media (max-width: 750px)
+{
+    .about .card-container 
+    {
+        padding: 20px 0;
+    }
+    .card-container .card .divider
+    {
+        width: 12em;
+    }
 }
