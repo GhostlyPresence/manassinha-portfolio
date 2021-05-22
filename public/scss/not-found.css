@@ -5,6 +5,7 @@
   --white: #fff;
   --text-light: #fff;
   --background: #161625;
+  --background-light:#292946;
   --logo-bg: #fff;
   --red:#ff005c;
   --yellow:#f9b208;
@@ -16,6 +17,7 @@
   --linkedin:aqua;
   --codepen: #c0e218;
   --contact:#fa4659;
+  --bar-color:aqua;
 }
 
 * {
@@ -31,6 +33,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(var(--black)), to(var(--background)));
   background: linear-gradient(var(--black), var(--background));
   font-family: 'Marcellus';
+  color: #fff;
   overflow-x: hidden;
 }
 
