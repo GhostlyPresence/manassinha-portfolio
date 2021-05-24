@@ -171,6 +171,12 @@ body {
   overflow-x: hidden;
 }
 
+code {
+  font-style: italic;
+  font-family: 'Marcellus';
+  color: var(--red);
+}
+
 section {
   position: relative;
   width: 100%;
@@ -290,7 +296,7 @@ section img {
 .about p {
   text-align: center;
   margin-top: 30px;
-  font-size: 1em;
+  font-size: 1.05em;
   color: #fff;
 }
 

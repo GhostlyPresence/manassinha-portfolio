@@ -171,6 +171,12 @@ body {
   overflow-x: hidden;
 }
 
+code {
+  font-style: italic;
+  font-family: 'Marcellus';
+  color: var(--red);
+}
+
 main {
   position: relative;
   display: -webkit-box;
