@@ -62,7 +62,6 @@ nav ul li:last-child
                 0 0 50px var(--contact),
                 0 0 200px var(--contact);
     transition: 500ms;
-    animation: contactAnimation 1.25s ease infinite;
     
     
 }
@@ -72,16 +71,8 @@ nav ul li:not(:last-child) a:hover
     color: var(--black);
 }
 
-@keyframes contactAnimation{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
 
-@media (max-width:900px)
+@media (max-width:1080px)
 {
     nav
     {
@@ -92,11 +83,10 @@ nav ul li:not(:last-child) a:hover
     }
     
 }
-@media (max-width:600px)
+@media (max-width:750px)
 {
     nav
     {
-        height:8em;
         font-size: 0.9em;
         flex-direction: column;
         justify-content: space-between;

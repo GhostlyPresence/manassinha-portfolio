@@ -103,8 +103,6 @@ nav ul li:last-child {
           box-shadow: 0 0 5px var(--contact), 0 0 25px var(--contact), 0 0 50px var(--contact), 0 0 200px var(--contact);
   -webkit-transition: 500ms;
   transition: 500ms;
-  -webkit-animation: contactAnimation 1.25s ease infinite;
-          animation: contactAnimation 1.25s ease infinite;
 }
 
 nav ul li:not(:last-child) a:hover {
@@ -112,29 +110,7 @@ nav ul li:not(:last-child) a:hover {
   color: var(--black);
 }
 
-@-webkit-keyframes contactAnimation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes contactAnimation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   nav {
     height: 9em;
     font-size: 0.9em;
@@ -148,9 +124,8 @@ nav ul li:not(:last-child) a:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   nav {
-    height: 8em;
     font-size: 0.9em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -172,7 +147,6 @@ body {
 }
 
 code {
-  font-style: italic;
   font-family: 'Marcellus';
   color: var(--red);
 }

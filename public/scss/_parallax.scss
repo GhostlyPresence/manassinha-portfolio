@@ -102,12 +102,34 @@ section img
 }
 
 
-.about p
+.about .about-text
 {
+    position: relative;
     text-align: center;
-    margin-top:30px;
+    padding: 50px;
+    margin-top:20px;
     font-size: 1.05em;
     color: #fff;
+    //border-radius: 10px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .about-text::before
+{
+    content: '';
+    position: absolute;
+    left: -50vw;
+    top:0;
+    height: 100%;
+    width: 200px;
+    background-color: rgba(255,255,255,0.3);
+    transform: skew(-45deg);
+    transition: 3.5s ease-out;
+}
+.about .about-text:hover::before
+{
+    left:100vw;
 }
 
 .link-container
@@ -163,7 +185,7 @@ section img
     }
 }
 
-@media (max-width:108px)
+@media (max-width:1080px)
 {
     .about
     {
@@ -179,6 +201,10 @@ section img
     #sub-text
     {
         font-size: 25px;     
+    }
+    .about .about-text::before
+    {
+        transition: 2s ease-out;
     }
     
 }
