@@ -32,6 +32,7 @@ section .bg-image
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0.8;
     z-index: -1;
 }
 
@@ -45,16 +46,17 @@ section .container
     text-transform: uppercase;
     letter-spacing: 1px;
     background:linear-gradient(90deg, rgba(2,0,36,0.25) 0%, rgba(77,9,121,0.25) 40%, rgba(0,212,255,0.25) 100%);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.8 );
-    backdrop-filter: blur( 9.0px );
-    -webkit-backdrop-filter: blur( 9.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.5 );
+    box-shadow: 10px 10px 50px rgba(31, 38, 135, 1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 
-section .container .top-bar
+/*section .container .top-bar
 {
+    display: none;
     width: 100%;
     height:30px;
     border-radius: 10px 10px 0 0;
@@ -84,7 +86,7 @@ section .container .top-bar span:nth-child(2)
 section .container .top-bar span:nth-child(3)
 {
     background-color: orangered
-}
+}*/
 section .container .contact-links
 {
     height: 60%;
@@ -122,6 +124,7 @@ section .container .contact-links ul li .fa
 {
     margin-right: 10px;
     font-size: 1.05em;
+    color: aqua;
 }
 
 section .container .divider

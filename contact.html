@@ -24,16 +24,16 @@
 
     <section>
         <div class="container">
-            <div class="top-bar">
+            <!--<div class="top-bar">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div>-->
             <div class="contact-links">
                 <ul>
                     <li><span class="fa fa-map-marker"></span>Patna, India</li>
                     <li><span class="fa fa-envelope-o"></span>ten3097@gmail.com</li>
-                    <li><span class="fa fa-phone"></span>+91 (950) 421 3681</li>
+                    <li><span class="fa fa-phone"></span>###############</li>
                     <li><span class="fa fa-link"></span><a href="https://thebinaryrealm.com" target="_blank">thebinaryrealm.com</a></li>
                 </ul>
                 
@@ -76,5 +76,15 @@
 
     <script src="public/js/app.js"></script>
     <script src="public/js/parallax.js"></script>
+    <script type="text/javascript" src="public/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".container"), {
+        max: 20,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".container"));
+    </script>
   </body>
 </html>

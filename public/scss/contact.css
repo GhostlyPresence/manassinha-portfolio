@@ -127,13 +127,6 @@ nav ul li:not(:last-child) a:hover {
 @media (max-width: 750px) {
   nav {
     font-size: 0.9em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -186,6 +179,7 @@ section .bg-image {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -199,52 +193,48 @@ section .container {
   letter-spacing: 1px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.25)), color-stop(40%, rgba(77, 9, 121, 0.25)), to(rgba(0, 212, 255, 0.25)));
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.25) 0%, rgba(77, 9, 121, 0.25) 40%, rgba(0, 212, 255, 0.25) 100%);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.8);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.8);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 10px 10px 50px #1f2687;
+          box-shadow: 10px 10px 50px #1f2687;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-section .container .top-bar {
-  width: 100%;
-  height: 30px;
-  border-radius: 10px 10px 0 0;
-  background: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  padding: 10px;
+/*section .container .top-bar
+{
+    display: none;
+    width: 100%;
+    height:30px;
+    border-radius: 10px 10px 0 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    padding:10px;
 }
-
-section .container .top-bar span {
-  height: 10px;
-  width: 10px;
-  margin-left: 5px;
-  border-radius: 50%;
+section .container .top-bar span
+{
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
 }
-
-section .container .top-bar span:nth-child(1) {
-  background-color: yellow;
+section .container .top-bar span:nth-child(1)
+{
+    background-color: yellow;
 }
-
-section .container .top-bar span:nth-child(2) {
-  background-color: #2cff2c;
+section .container .top-bar span:nth-child(2)
+{
+    background-color: rgb(44, 255, 44);
 }
-
-section .container .top-bar span:nth-child(3) {
-  background-color: orangered;
-}
-
+section .container .top-bar span:nth-child(3)
+{
+    background-color: orangered
+}*/
 section .container .contact-links {
   height: 60%;
   width: 80%;
@@ -294,6 +284,7 @@ section .container .contact-links ul li a:hover {
 section .container .contact-links ul li .fa {
   margin-right: 10px;
   font-size: 1.05em;
+  color: aqua;
 }
 
 section .container .divider {
@@ -478,6 +469,14 @@ footer .logo-footer {
   margin: 0px 0.5em;
 }
 
+/*===========================*/
+/*===========================*/
+.contact ul li:first-child {
+  display: none;
+}
+
+/*===========================*/
+/*===========================*/
 .contact ul li .fa {
   margin-right: 7px;
   color: aqua;

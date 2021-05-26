@@ -127,13 +127,6 @@ nav ul li:not(:last-child) a:hover {
 @media (max-width: 750px) {
   nav {
     font-size: 0.9em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -357,6 +350,14 @@ footer .logo-footer {
   margin: 0px 0.5em;
 }
 
+/*===========================*/
+/*===========================*/
+.contact ul li:first-child {
+  display: none;
+}
+
+/*===========================*/
+/*===========================*/
 .contact ul li .fa {
   margin-right: 7px;
   color: aqua;

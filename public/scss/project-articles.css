@@ -127,13 +127,6 @@ nav ul li:not(:last-child) a:hover {
 @media (max-width: 750px) {
   nav {
     font-size: 0.9em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -283,10 +276,10 @@ section img {
 .about .about-text::before {
   content: '';
   position: absolute;
-  left: -50vw;
+  left: -100vw;
   top: 0;
   height: 100%;
-  width: 200px;
+  width: 150px;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-transform: skew(-45deg);
           transform: skew(-45deg);
@@ -360,6 +353,9 @@ section img {
   }
   #sub-text {
     font-size: 25px;
+  }
+  .about .about-text {
+    padding: 25px;
   }
   .about .about-text::before {
     -webkit-transition: 2s ease-out;
@@ -472,6 +468,14 @@ footer .logo-footer {
   margin: 0px 0.5em;
 }
 
+/*===========================*/
+/*===========================*/
+.contact ul li:first-child {
+  display: none;
+}
+
+/*===========================*/
+/*===========================*/
 .contact ul li .fa {
   margin-right: 7px;
   color: aqua;

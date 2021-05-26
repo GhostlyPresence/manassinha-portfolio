@@ -32,13 +32,13 @@ nav
     background-color: transparent;
     border: 1px solid #fff;
 }
-
 nav ul
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav ul li
 {
     list-style: none;
@@ -74,6 +74,7 @@ nav ul li:not(:last-child) a:hover
 
 @media (max-width:1080px)
 {
+
     nav
     {
         height:9em;
@@ -82,14 +83,13 @@ nav ul li:not(:last-child) a:hover
         justify-content: space-between;
     }
     
+    
 }
 @media (max-width:750px)
 {
     nav
     {
         font-size: 0.9em;
-        flex-direction: column;
-        justify-content: space-between;
     }
     
 }
