@@ -93,7 +93,9 @@
     font-weight:400;
     color: #fff; 
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 250ms;
 }
+
 .card-container .card:nth-child(1) .box .content a
 {
     background: #2196f3;
@@ -109,6 +111,10 @@
 .card-container .card:nth-child(4) .box .content a
 {
     background: #E3AC27
+}
+.card-container .card .box .content a:hover
+{
+    background: #151515;
 }
 
 @media (max-width: 900px)

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <head>
+    <title>MANAS S.</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/scss/project-articles.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="../index.html" class="logo">
+        <span class="f-name">Manas </span>
+        <span class="l-name">Sinha</span>
+      </a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../contact.html" class="fa fa-phone" aria-hidden="true"></a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="heading">
+        <h1 id="text">Gesture Controlled Cursor</h1>
+        <h1 id="sub-text">Hand Tracking based Project | Computer Vision</h1>
+        <div class="btn-container">
+          <a class="btn project-btn" href="../projects.html">PROJECTS</a>
+        </div>
+      </div>
+      
+      <img src="../public/images/hands.png">
+      
+    </section>
+    <div class="about">
+      <h2>ABOUT THE PROJECT</h2>
+      <img class="divider" src="../public/images/divider.png">
+      <div class="about-text">
+        <code>Tech Stack - </code> Python, Mediapipe, OpenCV, pyautogui
+        <br>
+        <code>Algorithm - </code> Landmark detection
+        <br>
+        <br>
+        <ul style="text-align: left;">
+          <li>The version 1 of this project used <code>color detection</code> technology to detect the position of the hand.</li>
+          <li>The project can be viewed<code> <a href="https://github.com/GhostlyPresence/GestureControlledMousePointer" target="_blank" style="color: aqua;">HERE</a></code>.</li>
+          <li>The problem with that approach was that user had to have something of green color in their hands.</li>
+          <li>The version 2 of this program uses <code>hand tracking technology</code> to detect hands in the <code>real time</code>.</li>
+          <li><code>Mediapipe</code>, a library buit by google, provides ready-to-use <code>real time hand tracking and landmark estimation</code> feature.</li>
+          <li>Although, using this model affects the FPS a little bit, but overall it was found to be a better solution.</li>
+          <li><code>pyautogui</code> was used to control the mouse pointer.</li>
+        </ul>
+      </div>
+      <div class="link-container">
+        <a class="github-btn" href="https://github.com/GhostlyPresence/MousePointerControl-HandTracking" target="_blank">github</a>
+        <a class="youtube-btn" href="#" target="_blank">youtube</a>
+      </div>
+    </div>
+    <footer>
+      <div class="logo-footer">
+        <a href="../index.html" class="logo">
+          <span class="f-name">Manas </span>
+          <span class="l-name">Sinha</span>
+        </a>
+      </div>
+      <img class="divider" src="../public/images/divider.png">
+      <div class="contact">
+        <ul>
+          <li><span class="fa fa-mobile" aria-hidden="true"></span><span>+91 950 421 3681</span></li>
+          <li><span class="fa fa-envelope-o" aria-hidden="true"></span><span>ten3097@gmail.com</span></li>
+          <li><span class="fa fa-github-alt" aria-hidden="true"></span><span>GhostlyPresence</span></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <h6>© Copyright Manas sinha - 2021</h6>
+      </div>
+    </footer>
+    <div class="scroll-top"></div>
+
+    <script src="../public/js/app.js"></script>
+    <script src="../public/js/parallax.js"></script>
+  </body>
+</html>

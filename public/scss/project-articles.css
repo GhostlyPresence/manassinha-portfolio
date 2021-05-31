@@ -354,9 +354,6 @@ section img {
   #sub-text {
     font-size: 25px;
   }
-  .about .about-text {
-    padding: 25px;
-  }
   .about .about-text::before {
     -webkit-transition: 2s ease-out;
     transition: 2s ease-out;
@@ -385,6 +382,9 @@ section img {
   }
   .link-container a {
     margin: 10px 0;
+  }
+  .about .about-text::before {
+    opacity: 0;
   }
 }
 

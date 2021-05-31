@@ -201,10 +201,7 @@ section img
     {
         font-size: 25px;     
     }
-    .about .about-text
-    {
-        padding:25px;
-    }
+   
     .about .about-text::before
     {
         transition: 2s ease-out;
@@ -217,7 +214,7 @@ section img
     {
         padding: 90px;
     }
-
+    
     #divider1
     {
         width: 70%;
@@ -238,6 +235,10 @@ section img
     .link-container a
     {
         margin: 10px 0;
+    }
+    .about .about-text::before
+    {
+        opacity: 0;
     }
     
 }

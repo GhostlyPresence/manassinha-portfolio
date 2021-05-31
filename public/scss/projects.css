@@ -283,6 +283,8 @@ main::before {
   color: #fff;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 .card-container .card:nth-child(1) .box .content a {
@@ -299,6 +301,10 @@ main::before {
 
 .card-container .card:nth-child(4) .box .content a {
   background: #E3AC27;
+}
+
+.card-container .card .box .content a:hover {
+  background: #151515;
 }
 
 @media (max-width: 900px) {
